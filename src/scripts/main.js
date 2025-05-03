@@ -15,7 +15,7 @@ function sortList(list) {
 
       return `<li
         data-position="${position}"
-        data-salary="${salaryStr}"
+        data-salary="$${salaryStr}"
         data-age="${age}"
       >
         ${username}
@@ -58,5 +58,5 @@ function formatBigNumber(number) {
       formattedNumber = n + formattedNumber;
     });
 
-  return `$${formattedNumber}`;
+  return formattedNumber;
 }
